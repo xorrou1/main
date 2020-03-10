@@ -5,7 +5,13 @@ $color-hover : rgba(241, 109, 127, 1)
     width: ((100% -(($number_blocs - 1) * $marg-ri)) / $number_blocs)
     margin-right: $marg-ri
     text-align: center
-    
+
+@mixin text_style ($ff,$fs,$fw,$col)
+    font-family: $ff
+    font-size: $fs
+    font-weight: $fw
+    color: $col
+    text-transform: uppercase
 
 .wrapper heder,
 .CartItemsList__wrapper
@@ -37,11 +43,7 @@ $color-hover : rgba(241, 109, 127, 1)
     &-s 
         @include grid(5,0)
     span
-        padding-bottom: 20px
-        font-family: $font-f
-        font-size: 13px
-        font-weight: bold
-        color: rgba(34, 34, 34, 1)
+        @include text_style ($font-f,13px,bold,#222222)
         letter-spacing: -0.01em
         line-height: 20px
         text-transform: uppercase
@@ -55,16 +57,11 @@ $color-hover : rgba(241, 109, 127, 1)
             margin-right: 21px
     &__details  
         h3 
-            font-family: $font-f
-            font-size: 13px
-            color: rgba(34, 34, 34, 1)
-            text-transform: uppercase
+            @include text_style ($font-f,13px,300,#222222)
             margin-bottom: 38px  
             margin-top: 10px
         P 
-            font-family: $font-f
-            font-size: 13px
-            color: rgba(87, 87, 87, 1)
+            @include text_style ($font-f,13px,300,#575757)
             line-height: 20px  
             font-weight: 600    
         span 
@@ -94,10 +91,7 @@ $color-hover : rgba(241, 109, 127, 1)
 .button__wrapper__csc
     height: 50px
     width: 235px
-    font-family: $font-f
-    font-size: 14px
-    font-weight: bold
-    color: rgba(74, 74, 74, 1)
+    @include text_style ($font-f,14px,bold,#4a4a4a)
     text-transform: uppercase
     background-color: rgba(255, 255, 255, 1)
     border: $border_botton
@@ -118,29 +112,27 @@ $color-hover : rgba(241, 109, 127, 1)
     display: flex
     justify-content: space-between
     padding-top: 63px
+    margin-bottom: 53px
     input[type="text"],select
         height: 45px
         padding-left: 10px
         padding-right: 10px
         border: 1px solid rgba(234, 234, 234, 1)
         margin-bottom: 23px
+        @include text_style ($font-f,13px,300,#b1b1b1)
+        text-transform: none
     h2 
-        font-family: $font-f
-        font-size: 16px
-        font-weight: bold
-        color: rgba(34, 34, 34, 1)
-        text-transform: uppercase
+        @include text_style ($font-f,16px,bold,#222222)
         margin-bottom: 23px
     input[type="button"]
         height: 35px
         border: 1px solid rgba(234, 234, 234, 1)
-        font-family: $font-f
-        font-size: 11px
-        font-weight: bold
-        color: rgba(74, 74, 74, 1)
-        text-transform: uppercase
+        @include text_style ($font-f,11px,bold,#4a4a4a)
         background-color: rgba(255, 255, 255, 1)
         margin-bottom: 23px
+        &:hover 
+            border: 2px solid #f16d7f
+            color: #373b2d
     
 .shippingAdress__box
     input[type="button"]
@@ -148,10 +140,8 @@ $color-hover : rgba(241, 109, 127, 1)
 
 .couponDiscount__box
     h3 
-        font-family: 'Lato'
-        font-size: 14px
-        font-weight: 300
-        color: rgba(0, 0, 0, 1)
+        @include text_style ($font-f,14px,300,black)
+        text-transform: none
         margin-bottom: 23px
     input[type="button"] 
         width: 115px
@@ -162,14 +152,13 @@ $color-hover : rgba(241, 109, 127, 1)
 
 .total
     text-align: end
-    padding: 20px
+    padding: 43px
     input[type="button"]
         background-color: rgba(241, 109, 127, 1)
-        font-family: 'Lato'
-        font-size: 16px
-        font-weight: bold
-        color: rgba(255, 255, 255, 1)
-        text-transform: uppercase
+        @include text_style ($font-f,16px,bold,white)
         height: 50px
         width: 273px
+    h3 
+        @include text_style ($font-f,11px,300,#4a4a4a)
+        margin-bottom: 14px
 

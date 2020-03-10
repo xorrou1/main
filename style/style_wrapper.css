@@ -46,11 +46,11 @@
 }
 
 .pD_h span {
-  padding-bottom: 20px;
   font-family: "Lato";
   font-size: 13px;
   font-weight: bold;
   color: #222222;
+  text-transform: uppercase;
   letter-spacing: -0.01em;
   line-height: 20px;
   text-transform: uppercase;
@@ -71,6 +71,7 @@
 .CartItem-module__details h3 {
   font-family: "Lato";
   font-size: 13px;
+  font-weight: 300;
   color: #222222;
   text-transform: uppercase;
   margin-bottom: 38px;
@@ -80,7 +81,9 @@
 .CartItem-module__details P {
   font-family: "Lato";
   font-size: 13px;
+  font-weight: 300;
   color: #575757;
+  text-transform: uppercase;
   line-height: 20px;
   font-weight: 600;
 }
@@ -146,6 +149,7 @@
   font-weight: bold;
   color: #4a4a4a;
   text-transform: uppercase;
+  text-transform: uppercase;
   background-color: white;
   border: 1px solid #eaeaea;
 }
@@ -182,6 +186,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 63px;
+  margin-bottom: 53px;
 }
 
 .shipping__total input[type="text"], .shipping__total select {
@@ -190,6 +195,12 @@
   padding-right: 10px;
   border: 1px solid #eaeaea;
   margin-bottom: 23px;
+  font-family: "Lato";
+  font-size: 13px;
+  font-weight: 300;
+  color: #b1b1b1;
+  text-transform: uppercase;
+  text-transform: none;
 }
 
 .shipping__total h2 {
@@ -213,15 +224,22 @@
   margin-bottom: 23px;
 }
 
+.shipping__total input[type="button"]:hover {
+  border: 2px solid #f16d7f;
+  color: #373b2d;
+}
+
 .shippingAdress__box input[type="button"] {
   width: 100px;
 }
 
 .couponDiscount__box h3 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 14px;
   font-weight: 300;
   color: black;
+  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 23px;
 }
 
@@ -236,17 +254,26 @@
 
 .total {
   text-align: end;
-  padding: 20px;
+  padding: 43px;
 }
 
 .total input[type="button"] {
   background-color: #f16d7f;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 16px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   height: 50px;
   width: 273px;
+}
+
+.total h3 {
+  font-family: "Lato";
+  font-size: 11px;
+  font-weight: 300;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 /*# sourceMappingURL=style_wrapper.css.map */
