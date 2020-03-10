@@ -1,3 +1,6 @@
+@import url(style_wrapper.css);
+@import url(../style_sass/mixin_list.sass);
+
 * {
     margin: 0;
     padding: 0;
