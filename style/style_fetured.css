@@ -26,24 +26,48 @@
   height: 379px;
   width: 260px;
   margin-bottom: 39px;
-  position: relative;
+  transition: transform 0.5s ease-in  0.3S, box-shadow 0.5s ease-in  0.3S, border-radius 0.5s ease-in;
+
 }
+
+.catalog__product:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in  0.3S;
+  box-shadow: 0px 5px 8px 0px #000000;
+  border-radius: 3%;
+}
+
+.catalog__mango {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mango {
+  transition: all 0.7s ;
+}
+
 .catalog__product:hover .mango {
+  -moz-border-radius-topleft: 3%;
+  -webkit-border-top-left-radius: 3%;
+  border-top-left-radius: 3%;
+  -moz-border-radius-topright: 3%;
+  -webkit-border-top-right-radius: 3%;
+  border-top-right-radius: 3%;
   filter: brightness(0.5);
 }
+
 .AddToCart {
   position: absolute;
   border: 2px solid #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 39px;
   width: 123px;
-  top: 29%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -29%);
   visibility: hidden;
+  transition: visibility 0.5s 0.3s;
 }
 .AddToCart span {
   font-family: 'Lato';
@@ -52,7 +76,7 @@
   color: #ffffff;
 }
 .catalog__product:hover .AddToCart {
-  visibility: visible;
+  visibility: visible; 
 }
 .product__name {
   font-family: 'Lato';

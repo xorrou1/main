@@ -30,6 +30,11 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.breadcrumbs__list:last-child .breadcrumbs__link {
+  color: #f16d7f;
+  font-weight: 500;
+}
 .breadcrumbs__link:hover span {
   color: #f16d7f;
   font-weight: bold;

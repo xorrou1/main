@@ -1,6 +1,98 @@
 @import url(style_wrapper.css);
 @import url(../style_sass/mixin_list.sass);
+@import url(checkout__stule.css);
 
+@-webkit-keyframes tracking-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+@keyframes tracking-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
+
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+@keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -68,6 +160,11 @@ body {
 
 .logo__img {
     margin-right: 13px;
+}
+
+.logo__img:hover {
+    transition: 1s;
+    transform: rotateZ(360deg)   ;
 }
 
 .logo p {
@@ -152,27 +249,6 @@ body {
     background-color: #ffff;
     border-left: 1px solid #e6e6e6;
 }
-
-
-/*.header__button{ /Пробовал разными способами/
-    height: 38px;
-    width: 130px;
-    background-color: #f16d7f;
-}
-.header__button span {
-    font-family: 'Lato';
-    font-size: 15px;
-    color: #ffffff;
-    text-align: center;
-    margin-right: 8px;
-    margin-left: 19px;
-    letter-spacing: 0.03em;
-    line-height: 38px;
-}
-.header__button img{
-    padding-bottom: 3px;
-}*/
-
 
 .header__button {
     height: 38px;
@@ -279,6 +355,8 @@ body {
     background-image: url(../img/promo/promo-back.png);
     background-position: center -51px;
     background-repeat: no-repeat;
+    -webkit-animation: kenburns-top 3s cubic-bezier(0.645, 0.045, 0.355, 1.000) alternate-reverse both;
+	animation: kenburns-top 3s cubic-bezier(0.645, 0.045, 0.355, 1.000) alternate-reverse both;
 }
 
 .promo__content {
@@ -295,6 +373,8 @@ body {
     letter-spacing: 0.03em;
     line-height: 45px;
     margin-bottom: 12px;
+    -webkit-animation: tracking-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both 3s;
+	animation: tracking-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 3s ;
 }
 
 .promo__h2 {
@@ -303,6 +383,8 @@ body {
     color: #222222;
     letter-spacing: 0.03em;
     line-height: 33px;
+    -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 3.5s;
+	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 3.5s;
 }
 
 .promo__h2 span {
