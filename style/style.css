@@ -423,8 +423,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.7s;
 }
 
-.tv_footer {
-    background-color: rgba(241, 109, 127, 1);
+.social__footer-f{
+    background-image: url(../img/footer/F.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.social__footer-tv{
+    background-image: url(../img/footer/tv.png);
+    color: #898989;
+    background-color: #898989;
+}
+
+.social__footer-inst{
+    background-image: url(../img/footer/in.png);
+}
+
+.social__footer-pin{
+    background-image: url(../img/footer/P.png);
+}
+
+.social__footer-goo{
+    background-image: url(../img/footer/g.png);
+}
+
+
+.social__footer a{
+    padding: 18px;
+}
+
+.social__footer:hover {
+    background-color: rgba(241, 109, 127, 1);
+    border-radius: 20%;
+    transform: scale(1.1);
+}
+    
