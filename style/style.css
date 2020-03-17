@@ -1,6 +1,7 @@
 @import url(style_wrapper.css);
 @import url(../style_sass/mixin_list.sass);
 @import url(checkout__stule.css);
+@import url(style__singlePage.css);
 
 @-webkit-keyframes tracking-contract {
     0% {
@@ -92,7 +93,28 @@
               transform-origin: top;
     }
   }
-  
+ 
+@-webkit-keyframes kenburns-border_left{
+    0%{
+        -webkit-border-left: 0px solid #f16d7f;
+        border-left: 0px solid #f16d7f;
+    }
+    100%{
+        -webkit-border-left: 12px solid #f16d7f;
+        border-left: 12px solid #f16d7f;
+    }
+} 
+
+@keyframes kenburns-border_left{
+    0%{
+        -webkit-border-left: 0px solid #f16d7f;
+        border-left: 0px solid #f16d7f;
+    }
+    100%{
+        -webkit-border-left: 12px solid #f16d7f;
+        border-left: 12px solid #f16d7f;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -224,7 +246,7 @@ body {
     display: flex;
     opacity: 1;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     top: auto;
     direction: ltr;
 }
@@ -306,6 +328,7 @@ body {
 
 .menu__list:hover .drop {
     display: flex;
+    z-index: 1;
 }
 
 .drop__col {
@@ -313,7 +336,7 @@ body {
     margin-right: 47px;
 }
 
-.drop__col::last-of-type {
+.drop__col:last-of-type {
     margin-right: 0;
 }
 
@@ -362,8 +385,9 @@ body {
 .promo__content {
     margin-top: 224px;
     float: left;
-    border-left: 12px solid #f16d7f;
     padding-left: 12px;
+    -webkit-animation: kenburns-border_left .8s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both 3s;
+    animation: kenburns-border_left .8 cubic-bezier(0.215, 0.610, 0.355, 1.000) .8s  both 3s;
 }
 
 .promo__h1 {
@@ -417,49 +441,23 @@ body {
     height: 32px;
     width: 32px;
     background-color: rgba(255, 255, 255, 1);
-    text-align: center;
     margin-right: 8px;
     margin-top: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
+    justify-content: center; 
     transition: all 0.7s;
 }
 
-.social__footer-f{
-    background-image: url(../img/footer/F.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.social__footer i{
+    color: #b2b2b2;
 
-.social__footer-tv{
-    background-image: url(../img/footer/tv.png);
-    color: #898989;
-    background-color: #898989;
-}
-
-.social__footer-inst{
-    background-image: url(../img/footer/in.png);
-}
-
-.social__footer-pin{
-    background-image: url(../img/footer/P.png);
-}
-
-.social__footer-goo{
-    background-image: url(../img/footer/g.png);
-}
-
-
-.social__footer a{
-    padding: 18px;
 }
 
 .social__footer:hover {
     background-color: rgba(241, 109, 127, 1);
     border-radius: 20%;
     transform: scale(1.1);
+    color: #f7f7f8
 }
     
