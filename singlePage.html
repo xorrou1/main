@@ -58,12 +58,42 @@
                         </div>
                     </div>
                 </details>
-                <input type="text" placeholder="Search for Item...">
+                <input type="text" placeholder="Search for Item..." autofocus>
                 <button><img src="img/promo/search.png" alt="search"></button>
             </form>
         </div>
         <div class="header__right">
             <input class="header__cart" type="image" name="cart" src="img/promo/cart.png" alt="cart">
+            <div class="cart-list">
+                <div class="cart-list__product">
+                    <a href="product.html" class="cart-list__product_image"><img src="../main.git/img/FeturedItems/mango_9.png" alt="tee-shirt"></a>
+                    <div class="cart-list__product_data">
+                        <a href="product.html"><h3>Rebox Zane</h3></a>
+                        <div class="star-rating">
+                            <img src="img/promo/star-rating.png" alt="star-rating">    
+                        </div>
+                        <span>1 x $250</span>
+                    </div>
+                    <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                </div>
+                <div class="cart-list__product">
+                    <a class="cart-list__product_image"><img src="../main.git/img/single_page/amage_single.png" alt="tee-shirt"></a>
+                    <div class="cart-list__product_data">
+                        <h3>Rebox Zane</h3>
+                        <div class="star-rating">
+                            <img src="img/promo/star-rating.png" alt="star-rating">    
+                        </div>
+                        <span>1 x $250</span>
+                    </div>
+                    <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                </div>
+                <div class="cart-list__total">
+                    <span class="cart-list__total_span">TOTAL</span>
+                    <span class="cart-list__total_span">$500</span>
+                </div>
+                <input type="button" class="cart-list__button cart-list__button_action " value="Checkout">
+                <input type="button" class="cart-list__button" value="Go to cart">
+            </div>
             <a class="header__button button__effect" href="#"><span>My account</span><img src="img/promo/arrow_w.png" alt="arrow"></a>
         </div>
     </header>
@@ -221,7 +251,7 @@
                     </div>
                     <div class="choose-buy">
                         <h3 class="title-buy__firstType title-buy__firstType_size">QUANTITY</h3>
-                        <input type="text" name="QUANTITY" id="QUANTITY" placeholder="2">
+                        <input type="number" name="QUANTITY" id="QUANTITY" placeholder="2" pattern="^[ 0-9]+$" min="0">
                     </div>
                 </div>
                 <input type="button" class="button__buy" value="Add to Cart">

@@ -58,12 +58,42 @@
                             </div>
                         </div>
                     </details>
-                    <input type="text" placeholder="Search for Item...">
+                    <input type="text" placeholder="Search for Item..." autofocus>
                     <button><img src="img/promo/search.png" alt="search"></button>
                 </form>
             </div>
             <div class="header__right">
                 <input class="header__cart" type="image" name="cart" src="img/promo/cart.png" alt="cart">
+                <div class="cart-list">
+                    <div class="cart-list__product">
+                        <a href="product.html" class="cart-list__product_image"><img src="../main.git/img/FeturedItems/mango_9.png" alt="tee-shirt"></a>
+                        <div class="cart-list__product_data">
+                            <a href="product.html"><h3>Rebox Zane</h3></a>
+                            <div class="star-rating">
+                                <img src="img/promo/star-rating.png" alt="star-rating">    
+                            </div>
+                            <span>1 x $250</span>
+                        </div>
+                        <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                    </div>
+                    <div class="cart-list__product">
+                        <a class="cart-list__product_image"><img src="../main.git/img/single_page/amage_single.png" alt="tee-shirt"></a>
+                        <div class="cart-list__product_data">
+                            <h3>Rebox Zane</h3>
+                            <div class="star-rating">
+                                <img src="img/promo/star-rating.png" alt="star-rating">    
+                            </div>
+                            <span>1 x $250</span>
+                        </div>
+                        <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                    </div>
+                    <div class="cart-list__total">
+                        <span class="cart-list__total_span">TOTAL</span>
+                        <span class="cart-list__total_span">$500</span>
+                    </div>
+                    <input type="button" class="cart-list__button cart-list__button_action " value="Checkout">
+                    <input type="button" class="cart-list__button" value="Go to cart">
+                </div>
                 <a class="header__button button__effect" href="#"><span>My account</span><img src="img/promo/arrow_w.png" alt="arrow"></a>
             </div>
         </header>
@@ -202,9 +232,9 @@
                 </div>
                 <div class="CartItemsList__wrapper">
                     <div class="CartItem-module wrapper_left">
-                       <a href="#" class="CartItem-module_imageWrapper"><img src="img/secondary/product-1.png" alt="мужское пальто"></a>
+                       <a href="product.html" class="CartItem-module_imageWrapper"><img src="img/secondary/product-1.png" alt="мужское пальто"></a>
                        <div class="CartItem-module__details">
-                           <h3>Mango People T-shirt</h3>
+                           <a href="product.html"><h3>Mango People T-shirt</h3></a>
                            <p> Color:<span>Red</span></p>
                            <p>Size <span>XII</span></p>
                        </div> 
@@ -212,7 +242,7 @@
                     <div class="CartItem-module__actions wrapper_right">
                         <div class="actionsWrapper actionsWrapper__uP ">$150</div>
                         <div class="actionsWrapper__q">
-                            <input type="text"   placeholder="2" pattern="^[ 0-9]+$">
+                            <input type="number"   placeholder="2" pattern="^[ 0-9]+$" min="0" max="999">
                         </div>  
                         <div class="actionsWrapper actionsWrapper__ship">FREE</div>
                         <div class="actionsWrapper actionsWrapper__sub">$300</div>
@@ -221,9 +251,9 @@
                 </div>  
                 <div class="CartItemsList__wrapper">
                     <div class="CartItem-module wrapper_left">
-                       <a href="#" class="CartItem-module_imageWrapper"><img src="img/secondary/product-2.png" alt="мужское пальто"></a>
+                       <a href="product.html" class="CartItem-module_imageWrapper"><img src="img/secondary/product-2.png" alt="мужское пальто"></a>
                        <div class="CartItem-module__details">
-                           <h3>Mango People T-shirt</h3>
+                           <a href="product.html"><h3>Mango People T-shirt</h3></a>
                            <p> Color:<span>Red</span></p>
                            <p>Size <span>XII</span></p>
                        </div> 
@@ -231,7 +261,7 @@
                     <div class="CartItem-module__actions wrapper_right">
                         <div class="actionsWrapper actionsWrapper__uP ">$150</div>
                         <div class="actionsWrapper__q">
-                            <input type="text"  placeholder="2" pattern="^[ 0-9]+$">
+                            <input type="number"  placeholder="2" pattern="^[ 0-9]+$" min="0" max="999">
                         </div>  
                         <div class="actionsWrapper actionsWrapper__ship">FREE</div>
                         <div class="actionsWrapper actionsWrapper__sub">$300</div>
@@ -240,9 +270,9 @@
                 </div> 
                 <div class="CartItemsList__wrapper">
                     <div class="CartItem-module wrapper_left">
-                       <a href="#" class="CartItem-module_imageWrapper"><img src="img/secondary/product-8.png" alt="мужское пальто"></a>
+                       <a href="product.html" class="CartItem-module_imageWrapper"><img src="img/secondary/product-8.png" alt="мужское пальто"></a>
                        <div class="CartItem-module__details">
-                           <h3>Mango People T-shirt</h3>
+                           <a href="product.html"><h3>Mango People T-shirt</h3></a>
                            <p> Color:<span>Red</span></p>
                            <p>Size <span>XII</span></p>
                        </div> 
@@ -250,7 +280,7 @@
                     <div class="CartItem-module__actions wrapper_right">
                         <div class="actionsWrapper actionsWrapper__uP ">$150</div>
                         <div class="actionsWrapper__q">
-                            <input type="text"  placeholder="2" pattern="^[ 0-9]+$">
+                            <input type="number"  placeholder="2" pattern="^[ 0-9]+$" min="0" max="999">
                         </div>  
                         <div class="actionsWrapper actionsWrapper__ship">FREE</div>
                         <div class="actionsWrapper actionsWrapper__sub">$300</div>

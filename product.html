@@ -57,12 +57,42 @@
                             </div>
                         </div>
                     </details>
-                    <input type="text" placeholder="Search for Item...">
+                    <input type="text"  placeholder="Search for Item..." autofocus>
                     <button><img src="img/promo/search.png" alt="search"></button>
                 </form>
             </div>
             <div class="header__right">
                 <input class="header__cart" type="image" name="cart" src="img/promo/cart.png" alt="cart">
+                <div class="cart-list">
+                    <div class="cart-list__product">
+                        <a href="product.html" class="cart-list__product_image"><img src="../main.git/img/FeturedItems/mango_9.png" alt="tee-shirt"></a>
+                        <div class="cart-list__product_data">
+                            <a href="product.html"><h3>Rebox Zane</h3></a>
+                            <div class="star-rating">
+                                <img src="img/promo/star-rating.png" alt="star-rating">    
+                            </div>
+                            <span>1 x $250</span>
+                        </div>
+                        <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                    </div>
+                    <div class="cart-list__product">
+                        <a class="cart-list__product_image"><img src="../main.git/img/single_page/amage_single.png" alt="tee-shirt"></a>
+                        <div class="cart-list__product_data">
+                            <h3>Rebox Zane</h3>
+                            <div class="star-rating">
+                                <img src="img/promo/star-rating.png" alt="star-rating">    
+                            </div>
+                            <span>1 x $250</span>
+                        </div>
+                        <input type="image" src="img/promo/arrow_cancel.png" alt="arrow_cancel">
+                    </div>
+                    <div class="cart-list__total">
+                        <span class="cart-list__total_span">TOTAL</span>
+                        <span class="cart-list__total_span">$500</span>
+                    </div>
+                    <input type="button" class="cart-list__button cart-list__button_action " value="Checkout">
+                    <input type="button" class="cart-list__button" value="Go to cart">
+                </div>
                 <a class="header__button button__effect" href="shoppingCart.html"><span>My account</span><img src="img/promo/arrow_w.png" alt="arrow"></a>
             </div>
         </header>
@@ -233,27 +263,27 @@
                                 <div class="size__form">
                                     <h1>SIZE</h1>
                                     <div class="size__box">
-                                        <lebel for="XXS" >
-                                            <input type="checkbox" class="size__checkbox" id="XXS"> XXS
-                                        </lebel>
-                                        <lebel for="XS">
+                                        <label for="xxs">
+                                            <input type="checkbox" class="size__checkbox" id="xxs" name="xxs">XXS
+                                        </label>     
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="XS">XS
-                                        </lebel>
-                                        <lebel for="S">
+                                        </label>
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="S">S
-                                        </lebel>
-                                        <lebel for="M">
+                                        </label>
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="M">M
-                                        </lebel>
-                                        <lebel for="L">
+                                        </label>
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="L">L
-                                        </lebel>
-                                        <lebel for="XL">
+                                        </label>
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="XL">XL
-                                        </lebel>
-                                        <lebel for="XXL">
+                                        </label>
+                                        <label >
                                             <input type="checkbox" class="size__checkbox" id="XXL">XXL
-                                        </lebel>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="prise__form">

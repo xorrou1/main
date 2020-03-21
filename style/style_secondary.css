@@ -83,7 +83,7 @@
 .size__form {
   width: 236px;
 }
-.size__form lebel {
+.size__form label {
   font-family: 'OpenSans';
   font-size: 14px;
   color: #6f6e6e;
@@ -92,6 +92,11 @@
   margin-right: 18px;
   margin-left: 10px;
 }
+
+.size__box label:nth-child(4n+1){
+  margin-left: 0px;
+}
+
 .size__box {
   display: flex;
   flex-wrap: wrap;

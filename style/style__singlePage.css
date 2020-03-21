@@ -164,6 +164,11 @@
   font-size: 14px;
 }
 
+.choose-buy::-webkit-outer-spin-button,
+.choose-buy ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .choose-buy select[name^="choose"] {
   height: 35px;
   width: 144px;
@@ -182,9 +187,8 @@
   padding-left: 30px;
 }
 
-.choose-buy input[type="text"] {
-  padding-left: 13px;
-  padding-right: 13px;
+.choose-buy input[type="number"] {
+  padding: 0 13px;
   height: 33px;
   width: 118px;
   background-color: #ffffff;

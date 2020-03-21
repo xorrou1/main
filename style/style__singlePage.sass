@@ -98,6 +98,9 @@
             font-size: 14px  
 
 .choose-buy
+    &::-webkit-outer-spin-button,
+    ::-webkit-inner-spin-button
+            -webkit-appearance: none
     & select[name^="choose"]
         height: 35px
         width: 144px
@@ -107,16 +110,15 @@
         padding-left: 10px
     & select[name="choose-color"]
         background: url(../img/single_page/callor_red.png) no-repeat border-box 11% center
-        padding-left: 30px
-        
-    & input[type="text"]
-        padding-left: 13px
-        padding-right: 13px
+        padding-left: 30px     
+    & input[type="number"]
+        padding: 0 13px
         height: 33px
         width: 118px
         background-color: #ffffff
         border: 1px solid #eaeaea
         @include text_style ($font-f,13px,300,#bcbcbc)
+       
 
 .title-buy
     &__price
